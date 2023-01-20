@@ -12,51 +12,6 @@
 #define TWITT_MAX_SIZE 400
 
 
-
-// For finding what do you want from UT TUTI
-// int find_operator(char* user_choice)
-// {
-//     user_choice = (char*)calloc(10, sizeof(char));
-//     char* signup = (char*)calloc(10, sizeof(char));
-//     strcpy(signup, "signup");
-//     char* login = (char*)calloc(10, sizeof(char));
-//     strcpy(login, "login");
-//     char* find_user = (char*)calloc(10, sizeof(char));
-//     strcpy(find_user, "find_user");
-//     char* info_user = (char*)calloc(10, sizeof(char));
-//     strcpy(info_user, "info");
-//     char* post_user = (char*)calloc(10, sizeof(char));
-//     strcpy(post_user, "post");
-//     char* like_user = (char*)calloc(10, sizeof(char));
-//     strcpy(like_user, "like");
-//     char* logout_user = (char*)calloc(10, sizeof(char));
-//     strcpy(logout_user, "logout");
-//     char* delete = (char*)calloc(10, sizeof(char));
-//     strcpy(delete, "delete");
-//     char* quit = (char*)calloc(10, sizeof(char));
-//     strcpy(quit, "quit");
-
-//     if(!strcmp(user_choice, signup)) return 1;
-//     else if(!strcmp(user_choice, login)) return 2;
-//     else if(!strcmp(user_choice, find_user)) return 3;
-//     else if(!strcmp(user_choice, info_user)) return 4;
-//     else if(!strcmp(user_choice, post_user)) return 5;
-//     else if(!strcmp(user_choice, like_user)) return 6;
-//     else if(!strcmp(user_choice, logout_user)) return 7;
-//     else if(!strcmp(user_choice, delete)) return 8;
-//     else if(!strcmp(user_choice, quit)) return 9;
-//     else return 0;
-// }
-
-void freeBuff()
-{
-    char c;
-    do
-    {
-        c = getchar();
-    } while(c != '\n' && c != EOF);
-}
-
 int post_counter(char* username, POST* head)
 {
     int counter = 0;
