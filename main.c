@@ -46,24 +46,6 @@ int main()
     user_dummy_node->next_user = NULL;
     int post_id;
     int operator_int;
-    // char* signup = (char*)calloc(10, sizeof(char));
-    // strcpy(signup, "signup");
-    // char* login_user = (char*)calloc(10, sizeof(char));
-    // strcpy(login_user, "login");
-    // char* find_user = (char*)calloc(10, sizeof(char));
-    // strcpy(find_user, "find_user");
-    // char* info_user = (char*)calloc(10, sizeof(char));
-    // strcpy(info_user, "info");
-    // char* post_user = (char*)calloc(10, sizeof(char));
-    // strcpy(post_user, "post");
-    // char* like_user = (char*)calloc(10, sizeof(char));
-    // strcpy(like_user, "like");
-    // char* logout_user = (char*)calloc(10, sizeof(char));
-    // strcpy(logout_user, "logout");
-    // char* delete = (char*)calloc(10, sizeof(char));
-    // strcpy(delete, "delete");
-    // char* quit = (char*)calloc(10, sizeof(char));
-    // strcpy(quit, "quit");
 
     while(TRUE)
     {
@@ -71,8 +53,6 @@ int main()
         // Get input from user
         gets(all_str);
         order = strtok(all_str, " ");
-        // username = strtok(NULL, " ");
-        // pass = strtok(NULL, " ");
         if(!strcmp("signup", order)) operator_int = 1;
         else if(!strcmp(order, "login")) operator_int = 2;
         else if(!strcmp(order, "find_user")) operator_int = 3;
